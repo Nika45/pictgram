@@ -3,14 +3,14 @@
     <div class="row">
       <div class="col-md-offser4 col-md-4 users-new-container">
         <h1 class="text-center text-white">Sign up</h1>
-        <%= from_for @user do |f| %>
-          <div class="from-group">
+        <%= form_for @user do |f| %>
+          <div class="form-group">
             <%= f.label :name, class: 'text-white' %>
-            <%= f.text_field :name, class: 'from-control' %>
+            <%= f.text_field :name, class: 'form-control' %>
           </div>
-          <div class="from-group">
+          <div class="form-group">
             <%= f.labrl :email, class: 'text-white' %>
-            <%= f.text_field :email, class: 'from-control' %>
+            <%= f.text_field :email, class: 'form-control' %>
           </div>
           
           <%= f.submit "登録", class: 'btn-block btn-white' %>
